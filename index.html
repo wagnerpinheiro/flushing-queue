@@ -85,82 +85,177 @@
         <p style="margin-top: 200px; ">Objetivo: Simular uma fila de requisições em um servidor, com a organização da fila através da prioridade de cada entidade...</p>
     </div>
 
-    <div id="demo-001" class="step slide" data-x="1500" data-y="-1500">
+    <div id="demo-001-1" class="step slide" data-x="1500" data-y="-1500">
         <h2>Demo Inicial: Flushing Queue</h2>
-        <img style="margin-top: 50px;" src="img/001-demo.png" />
+        <img style="margin-top: 50px;" src="img/001-demo.png" />        
     </div>
 
-    <div id="demo-002" class="step slide" data-x="1500" data-y="-1500" data-z="-2000">
+    <div id="bloco-ini" class="step slide" data-x="1500" data-y="-1500" data-z="-2000">
         <h2>Bloco Flushing Queue</h2>
         <img style="margin-top: 100px; margin-left: 100px;" src="img/002-demo.png" />
+        <div class="menu">
+            <ul>
+            <li><a href="#/bloco-fq">Comparar: Bloco Priority</a></li>
+            </ul>
+        </div>
     </div>
 
-    <div id="demo-001" class="step slide" data-x="1500" data-y="-1500">
+    <div id="demo-001-2" class="step slide" data-x="1500" data-y="-1500">
         <h2>Demo Inicial: Flushing Queue</h2>
         <img style="margin-top: 50px;" src="img/001-demo.png" />
+        <div class="menu">
+            <ul>
+            <li><a href="#/simulacao">Comparar: Simulação</a></li>
+            </ul>
+        </div>        
     </div>
 
 
-    <div class="step slide " data-x="600" data-y="1000">
+    <div id="simulacao" class="step slide " data-x="600" data-y="1000">
         <h2>SIMULAÇÃO: Flushing Queue with Priority</h2>
         <img height="600" src="img/run-0.png" />
+        <div class="menu">
+            <ul>
+            <li><a href="#/demo-001-2">Comparar: Demo inicial</a></li>
+            </ul>
+        </div>
+        <div class="cola">
+            <ul>
+                <li>Adicionado:
+                    <ul>
+                    <li>Chaves para configuração</li>
+                    <li>Gerador de prioridade</li>
+                    <li>Visores para os resultados</li>
+                    <li>Blocos para gráficos</li>
+                    </ul>
+                </li>
+            </ul>            
+        </div>
     </div>
 
-    <div class="step slide " data-x="600" data-y="1000" data-z="-2000">
+    <div id="bloco-fq" class="step slide " data-x="600" data-y="1000" data-z="-2000">
         <h2>Bloco Flushing Queue</h2>
         <img style="margin-top: 50px;" src="img/run-0-bloco.png" />
+        <div class="menu">
+            <ul>
+            <li><a href="#/bloco-ini">Comparar: Bloco inicial</a></li>
+            </ul>
+        </div>
+        <div class="cola">
+            <ul>
+                <li>Adicionado:
+                    <ul>
+                    <li>Bloco fila com prioridade</li>                    
+                    <li>Entrada e chaveamento para seleção do tipo de fila</li>                    
+                    </ul>
+                </li>
+            </ul>            
+        </div>
     </div>
 
     <div class="step slide " data-x="600" data-y="1000">
         <h2>SIMULAÇÃO: Flushing Queue with Priority</h2>
-        <img height="600" src="img/run-0.png" />
+        <img height="600" src="img/run-0.png" />        
     </div>
+
 
     <div id="run" class="step" data-x="800" data-y="1000" data-z="-3000" scale="3"  data-rotate-x="180">
         <img src="img/play.png" />
     </div>
-
-
     
 
     <div class="step slide slide2" data-x="-1500" data-y="3500" data-rotate-x="180">
         <h2>CASO 01: Fila FIFO sem Flushing</h2>
         <img class="run-bloco" src="img/run-1.png" />
+        <div class="cola">
+            <ul>
+                <li>Configuração do Sistema</li>
+                <li>Resultados</li>                
+            </ul>            
+        </div>
     </div>
 
     <div class="step slide slide2" data-x="-1500" data-y="3500" data-rotate-x="90">
         <h2>CASO 01: Diagrama</h2>
-        <img class="diagrama" src="img/res-1.png" />
+        <img class="diagrama" src="img/res-1.png" />  
+        <div class="cola">
+            <ul>
+                <li>Fila 100% capacidade</li>
+                <li>Drop de pacotes</li>
+                <li>Independente da prioridade os pacotes são processados na ordem</li>
+            </ul>            
+        </div>      
     </div>
 
     <div class="step slide slide2" data-x="0" data-y="3500" data-rotate-x="180">
         <h2>CASO 02: Fila FIFO com Flushing</h2>
         <img class="run-bloco" src="img/run-2.png" />
+        <div class="cola">
+            <ul>
+                <li>Configuração do Sistema</li>
+                <li>Resultados</li>                
+            </ul>            
+        </div>
     </div>
 
     <div class="step slide slide2" data-x="0" data-y="3500" data-rotate-x="90">
         <h2>CASO 02: Diagrama</h2>
         <img class="diagrama" src="img/res-2.png" />
+        <div class="cola">
+            <ul>
+                <li>Fila não opera em 100% da capacidade</li>
+                <li>Sem Drop de pacotes</li>
+                <li>Flushing dos pacotes a 90%</li>
+                <li>Independente da prioridade os pacotes são processados na ordem</li>
+            </ul>            
+        </div>
     </div>
 
     <div class="step slide slide2" data-x="1500" data-y="3500" data-rotate-x="180">
         <h2>CASO 03: Fila PRIORITY sem Flushing</h2>
         <img class="run-bloco" src="img/run-3.png" />
+        <div class="cola">
+            <ul>
+                <li>Configuração do Sistema</li>
+                <li>Resultados</li>                
+            </ul>            
+        </div>
     </div>
 
     <div class="step slide slide2" data-x="1500" data-y="3500" data-rotate-x="90">
         <h2>CASO 03: Diagrama</h2>
         <img class="diagrama" src="img/res-3.png" />
+        <div class="cola">
+            <ul>
+                <li>Fila 100% capacidade</li>
+                <li>Drop de pacotes</li>
+                <li>Pacotes são processados de acordo com a prioridade</li>
+            </ul>            
+        </div>
     </div>
 
     <div class="step slide slide2" data-x="3000" data-y="3500" data-rotate-x="180">
         <h2>CASO 04: Fila PRIORITY com Flushing</h2>
         <img class="run-bloco" src="img/run-4.png" />
+        <div class="cola">
+            <ul>
+                <li>Configuração do Sistema</li>
+                <li>Resultados</li>                
+            </ul>            
+        </div>
     </div>
 
     <div class="step slide slide2" data-x="3000" data-y="3500" data-rotate-x="90">
         <h2>CASO 04: Diagrama</h2>
         <img class="diagrama" src="img/res-4.png" />
+        <div class="cola">
+            <ul>
+                <li>Fila não opera em 100% da capacidade</li>
+                <li>Sem Drop de pacotes</li>
+                <li>Flushing dos pacotes a 90%</li>
+                <li>Pacotes são processados de acordo com a prioridade</li>
+            </ul>            
+        </div>
     </div>
 
 
